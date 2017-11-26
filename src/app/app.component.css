@@ -1,9 +1,49 @@
 agm-map {
-  height: 98vh;
+  height: 100vh;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+button {
+  cursor: pointer;
+}
+
+.overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: block; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    background-color: rgba(0,0,0,0.7); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    overflow: hidden;
+    border: none;
+    background: url(../assets/cross.png) no-repeat center center;
+    text-indent: 200%;
+    color: transparent;
+    outline: none;
+    z-index: 100;
+}
+
+.carousel-inner img {
+  margin: auto;
+}
+
+.img-wide {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.item {
+  height: 100vh;
 }
